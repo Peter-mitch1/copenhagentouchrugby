@@ -7,7 +7,7 @@ class TailwindExtractor {
 module.exports = {
   siteName: 'Copenhagen Touch Rugby',
   siteDescription: 'A site for Copenhagen Touch Rugby',
-  siteUrl: 'https://gridsome-starter-bleda.netlify.com',
+  siteUrl: 'https://copenhagentouchrugby.com',
   titleTemplate: `%s | None`,
   icon: 'src/favicon.png',
 
@@ -50,7 +50,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-135446199-1'
+        id: 'UA-145402097-1'
       }
     },
     {
