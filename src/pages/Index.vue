@@ -1,17 +1,30 @@
 <template>
-  <Layout class="bg-gray-100">
+  <Layout>
     <main>
       <header>
-        <div class="p-8">
-          <g-image src="~/assets/logo.svg" width="1000"/>
-          <h1 class="">
+        <div class="px-8 py-12">
+          <g-image src="~/assets/logo.svg" width="1000" alt="Copenhagen Touch Rugby"/>
+          <h1 class="text-3xl">
             <g-link to="/" class="">Copenhagen Touch Rugby</g-link>
           </h1>
-        </div>
-        <div class="p-4">
-          <g-image src="~/assets/images/home/touch.jpg" width="1000"/>
-
-          <p class="">Fit having fun</p>
+          <g-image src="~/assets/images/home/touch.jpg" width="1000" class="mt-6 rounded-lg shadow-xl" alt ="Playing field"/>
+          <h2 class="mt-6 text-2xl font-bold text-gray-900 leading-tight">Get fit by having fun
+            <span class="text-indigo-500">while socialising</span>
+          </h2>
+          <div class="text-gray-600">
+            <p class="mt-2">
+              Touch rugby encourages socialising and keeping the game as up-beat as possible, but it's the improvements on fitness that really stand out.
+            </p>
+            <p class="mt-2">
+              It's great way to improve your cardio vascular fitness, raising and lowering your heart rate and burning fat at a pace that suits you.
+            </p>
+            <p class="mt-2">
+              Touch rugby is a fantastic way to keep fit or get fit, without really thinking about it. It's a lot easier to play a game with your mates for an hour than run for an hour.
+            </p>
+          </div>
+          <div class="mt-4">
+            <a class="inline-block px-5 py-3 bg-indigo-500 text-sm text-white rounded-lg shadow-lg uppercase tracking-wider font-semibold" href="https://www.facebook.com/groups/172852439436767/">Join the group</a>
+          </div>
         </div>
       </header>
       <section>
