@@ -1,11 +1,16 @@
 <template>
-  <Layout class="bg-gray-400">
+  <Layout class="bg-gray-100">
     <main>
       <header>
-        <div class="">
+        <div class="p-8">
+          <g-image src="~/assets/logo.svg" width="1000"/>
           <h1 class="">
             <g-link to="/" class="">Copenhagen Touch Rugby</g-link>
           </h1>
+        </div>
+        <div class="p-4">
+          <g-image src="~/assets/images/home/touch.jpg" width="1000"/>
+
           <p class="">Fit having fun</p>
         </div>
       </header>
