@@ -5,10 +5,18 @@
         <div class="px-8 py-12 mx-auto max-w-md sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 px-12">
           <div class="xl:max-w-lg xl:ml-auto">
             <div class="flex">
-              <g-image src="~/assets/logo.svg" width="1000" alt="Copenhagen Touch Rugby"/>
-              <h1 class="text-3xl">
-                <g-link to="/" class="uppercase">Copenhagen Touch Rugby</g-link>
-              </h1>
+              <div class="flex-initial">
+                <div class="mt-4 h-16 w-16">
+                  <g-image src="~/assets/logo.svg"
+                    width="200" alt="Copenhagen Touch Rugby"
+                    class="h-24 w-24 object-contain"/>
+                </div>
+              </div>
+              <div class="flex-initial">
+                <h1 class="ml-4 mt-6 text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+                  <g-link to="/" class="uppercase">Copenhagen Touch</g-link>
+                </h1>
+              </div>
             </div>
             <g-image src="~/assets/images/home/touch.jpg" width="1000" class="mt-6 sm:mt-8 rounded-lg shadow-xl sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden" alt ="Playing field"/>
             <h2 class="mt-6 sm:mt-8 text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Burn fat without trying
@@ -26,10 +34,11 @@
               </p>
             </div>
             <div class="mt-4 sm:mt-6">
-              <a class="inline-block px-5 py-3 bg-indigo-500 text-sm lg:text-xl text-white rounded-lg shadow-lg uppercase tracking-wider font-semibold sm:text-base"
+              <a class="btn btn-indigo shadow-lg sm:text-base"
                 href="https://www.facebook.com/groups/172852439436767/">
-                Get in touch
+                join the group
               </a>
+              <a href="#" class="ml-2 btn btn-gray sm:text-base">learn more</a>
             </div>
           </div>
         </div>

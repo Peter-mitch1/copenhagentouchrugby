@@ -1,11 +1,189 @@
 /*! purgecss start ignore */
-@import 'tailwindcss/base';
+@tailwind base;
 /*! purgecss end ignore */
 
-@import 'components/resets';
+/* @import 'components/resets'; */
 
-@import 'tailwindcss/components';
+@tailwindcss components;
 
-@import 'components/markdown';
+/* @import 'components/markdown'; */
+::selection {
+  @apply text-white bg-black;
+}
 
-@import 'tailwindcss/utilities';
+.btn {
+  @apply inline-block px-5 py-3 text-sm rounded-lg uppercase tracking-wider font-semibold;
+}
+.btn:focus {
+  @apply outline-none shadow-outline;
+}
+.btn-indigo {
+  @apply bg-indigo-500 text-white;
+}
+.btn-indigo:hover {
+  @apply bg-indigo-400;
+}
+.btn-indigo:active {
+  @apply bg-indigo-600;
+}
+.btn-gray {
+  @apply bg-gray-400 text-gray-800;
+}
+.btn-gray:hover {
+  @apply bg-gray-300;
+}
+.btn-gray:active {
+  @apply bg-gray-500;
+}
+/* @screen sm {
+  .btn {
+    @apply text-base;
+  }
+} */
+
+.markdown {
+  p,
+  ul,
+  ol {
+    @apply mb-4;
+  }
+
+  ul li,
+  ol li {
+    @apply mb-4;
+  }
+
+  ul {
+    @apply list-disc pl-4;
+  }
+
+  ol {
+    @apply list-decimal pl-4;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans font-bold text-black my-6;
+  }
+
+  h5,
+  h6 {
+    @apply uppercase;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  h5 {
+    @apply text-base;
+  }
+  h6 {
+    @apply text-sm;
+  }
+
+  @screen sm {
+    h2 {
+      @apply text-4xl;
+    }
+  }
+
+  a {
+    @apply text-blue-500 transition-color;
+
+    &:hover {
+      @apply text-blue-700;
+    }
+  }
+
+  pre.shiki {
+    /* @apply bg-gray-codeblock !important; */
+    /* @apply border border-gray-300 -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch; */
+  }
+
+  code.shiki {
+    /* @apply bg-gray-100 text-gray-700 !important; */
+    /* @apply border border-gray-300 p-4 block mb-4 font-mono text-sm leading-code overflow-x-auto scrolling-touch; */
+  }
+
+  .shiki-inline {
+    @apply bg-gray-100 text-gray-700 !important;
+    @apply border border-gray-300 text-xs px-2 py-1 rounded;
+  }
+
+  mark {
+    @apply bg-yellow-300 px-2;
+  }
+
+  dl {
+    dt {
+      @apply text-black text-sm font-sans font-bold uppercase mb-2;
+      + dd {
+        @apply mb-4 pl-2;
+      }
+    }
+    dd {
+      @apply mb-4;
+    }
+  }
+
+  blockquote {
+    @apply border-l-4 border-gray-300 p-4 mb-4 mx-4 italic;
+
+    p {
+      @apply mb-0;
+    }
+  }
+
+  hr {
+    @apply h-px bg-gray-300 my-8;
+  }
+}
+
+@screen sm {
+  .markdown {
+    blockquote {
+      @apply mx-10;
+    }
+
+    h2 {
+      @apply text-4xl;
+    }
+    h3 {
+      @apply text-3xl;
+    }
+    h4 {
+      @apply text-2xl;
+    }
+    h5 {
+      @apply text-xl;
+    }
+    h6 {
+      @apply text-base;
+    }
+  }
+}
+
+.post-cover {
+  &::after {
+    @apply absolute w-full h-48 left-0 bottom-0 z-0;
+    content: '';
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+  }
+
+  &.fullscreen::after {
+    @apply h-full;
+    background: rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* @import 'tailwindcss/utilities'; */
+@tailwind utilities;
